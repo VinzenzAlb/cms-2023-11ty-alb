@@ -1,0 +1,210 @@
+#workshops h3 {
+  font-size: 20px;
+  color: $lightOrange;
+}
+
+.level {
+  background-color: $darkGray;
+  color: $white;
+}
+
+@include breakpoint(0, $mobile) {
+  #workshops h2 {
+    margin-top: 4px;
+  }
+
+  .level-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 0;
+  }
+
+  .level {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .icon {
+    height: 7.5rem;
+    margin-top: -3.5rem;
+
+  }
+
+
+  .icon img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+
+  .level img.level-quote {
+    height: 2.5rem;
+    margin: 2rem 0 1rem;
+  }
+
+  .level-num {
+    font-size: 30px;
+    margin: 0 0 2rem 5.8rem;
+  }
+
+  .level-copytext {
+    font-size: 15px;
+    font-family: "Source-sans-light";
+    margin: 0 1rem 1rem;
+    line-height: 1.25rem;
+  }
+
+  .level h3 {
+    margin: 2rem 1rem 1rem;
+    width: calc(100% - 20px);
+  }
+
+  .button {
+    margin-left: 1rem;
+  }
+
+  .workshop-quote blockquote {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+
+
+}
+
+@include breakpoint($desktop) {
+
+  #workshops {
+    width: 100%;
+  }
+
+  .workshops-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .level-wrapper {
+    display: flex;
+    width: 60vw;
+    min-width: 45rem;
+    max-width: 75rem;
+    margin: 1rem;
+  }
+
+  .level {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .level-wrapper-3 {
+    align-self: end;
+  }
+
+  .level-wrapper-2 {
+    align-self: center;
+  }
+
+  .level-wrapper-1 {
+    align-self: start;
+  }
+
+  .level h3,
+  .workshop-description p {
+    margin: 0 0 1rem;
+  }
+
+  .workshop-description {
+    width: 40%;
+    min-width: 20rem;
+  }
+
+  .workshop-description p {
+    line-height: 20px;
+    font-size: 15px;
+  }
+
+  .workshop-quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .level-num {
+    font-family: "Source-sans-semibold";
+    color: $darkGray;
+    font-size: 170px;
+    z-index: -1;
+    margin-right: -0.08em;
+    display: flex;
+  }
+
+
+  .level-wrapper-3 .level-num {
+    margin-top: -1.8rem;
+  }
+
+  .level-wrapper-2 .level-num {
+    align-self: center;
+  }
+
+  .level-wrapper-1 .level-num {
+    align-items: end;
+    margin-bottom: -1.8rem;
+  }
+
+  .icon img {
+    width: 10rem;
+    height: 10rem;
+    padding: 1rem;
+  }
+
+  .icon {
+    align-self: center;
+  }
+
+
+  .level-3 .icon,
+  .level-2 .icon {
+    order: 1;
+  }
+
+  .level-3 .workshop-quote,
+  .level-2 .workshop-description {
+    order: 2;
+  }
+
+  .level-3 .level-quote {
+    order: 2;
+  }
+
+  .level :is(.icon, .workshop-description, blockquote) {
+    margin: 1rem;
+  }
+
+  .level-quote {
+    height: 75px;
+    width: min-content;
+    align-self: flex-end;
+    //position: absolute;
+  }
+
+  .level blockquote {
+    font-size: 24px;
+    line-height: 27px;
+  }
+
+  .level-wrapper-1 {
+    margin-bottom: 0;
+  }
+
+
+
+
+
+
+
+}

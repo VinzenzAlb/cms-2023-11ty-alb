@@ -1,0 +1,109 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source-sans-light";
+}
+
+h3,
+h2 {
+  color: $darkOrange;
+  margin: 1rem;
+}
+
+
+.button {
+  // background-color: black;
+  border: 1px solid $lightOrange;
+  display: inline-block;
+  cursor: pointer;
+  color: $white;
+  font-family: "Source-sans-semibold";
+  font-size: 13px;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+.upperheading {
+  margin-left: 1rem;
+  text-transform: uppercase;
+  font-family: "Source-sans-semibold";
+  font-size: 16px;
+  margin: 0 1rem -8px;
+}
+
+.button:hover {
+  background-color: $middleOrange;
+  transition: all 0.2s ease-in-out;
+  color: $darkGray;
+}
+
+.button:active {
+  position: relative;
+  top: 1px;
+}
+
+.icon {
+  background-color: $middleGray;
+  padding: 20px;
+  border-radius: 100%;
+  width: auto;
+  z-index: 99;
+}
+
+
+.quote {
+  width: 5em;
+}
+
+img {
+  width: 100%;
+}
+
+
+@include breakpoint(0, $mobile) {
+
+  .level-num {
+    color: $middleOrange;
+    background-color: $lightGray;
+    width: 1.50em;
+    height: 1.50em;
+    text-align: center;
+    display: inline-block;
+    padding: 0.25em;
+    border-radius: 100%;
+  }
+
+  h2 {
+    color: $darkOrange;
+    font-size: 28px;
+  }
+
+  section {
+    margin: $marginsectiontop 0;
+  }
+
+}
+
+@include breakpoint($desktop) {
+  h2 {
+    font-size: 55px;
+  }
+
+
+  main {
+    max-width: 90rem;
+    margin: auto;
+  }
+
+  section {
+    margin: 2*$marginsectiontop 0;
+    width: 100%;
+
+  }
+}

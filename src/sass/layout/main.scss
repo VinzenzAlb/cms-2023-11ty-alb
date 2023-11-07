@@ -1,0 +1,56 @@
+#about {
+  background-color: $paleOrange;
+  display: flex;
+  margin: 0;
+}
+
+#about-information {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+#about-information p.about-copytext {
+  font-family: "Source-sans-light";
+  font-size: 15px;
+  margin: 0 1rem 0.5rem;
+  line-height: 20px;
+}
+
+#about-information a.button {
+  width: fit-content;
+  margin: 0 1rem;
+  color: $darkGray;
+}
+
+@include breakpoint(0, $mobile) {
+  section#about {
+    flex-direction: column;
+    //margin: -50px 0 0 0;
+    padding: $marginsectiontop 0;
+  }
+}
+
+@include breakpoint($desktop) {
+  section#about {
+    flex-direction: row;
+    padding: 2*$marginsectiontop 0;
+  }
+
+  #about {
+    width: 100%;
+  }
+
+  #about img {
+    width: 50%;
+    margin: 0 1rem 0;
+
+    object-fit: cover;
+    object-position: left;
+
+  }
+
+  #about-information {
+    justify-content: center;
+  }
+}

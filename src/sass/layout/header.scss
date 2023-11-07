@@ -1,0 +1,102 @@
+header {
+  display: flex;
+  flex-direction: column;
+
+
+  background-size: cover;
+  background-position: right;
+  background-image: url("/images/DANCE_-_Grupo_de_Rua__Inoah__at_Brooklyn_Academy_of_Music_49020288773.webp");
+}
+
+header h1 {
+  color: white;
+  display: inline-block;
+  font-size: 18px;
+  margin: 10px;
+}
+
+
+
+header a.button {
+  width: fit-content;
+  background-color: black;
+}
+
+@include breakpoint(0, $mobile) {
+  header {
+    height: 60vh;
+  }
+
+  header h2 {
+    margin: 25vh 0 0 50vw;
+    white-space: wrap;
+  }
+
+  h2 span {
+    white-space: nowrap;
+  }
+
+  header a.button {
+    margin: 10px 0 0 50vw;
+  }
+}
+
+@include breakpoint($desktop) {
+  header {
+    height: 100vh;
+  }
+
+  nav,
+  #home {
+    display: inline-block;
+  }
+
+  nav {
+    float: right;
+  }
+
+  nav a {
+    display: inline-block;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    color: $darkOrange;
+  }
+
+  nav>ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav li {
+    margin: 10px;
+    font-family: "Source-sans-semibold"
+  }
+
+  #header-wrapper {
+    margin: 30px;
+    font-size: 18px;
+  }
+
+  header h2 {
+    margin: 28vh 0 0 10vw;
+  }
+
+  header a.button {
+    margin: 3vh 0 0 10vw;
+    font-size: 18px;
+    padding: 15px 20px;
+  }
+
+
+}
+
+
+
+
+h1 span {
+  text-transform: uppercase;
+}
+
+h1 span {
+  font-family: "Source-sans-semibold";
+}
